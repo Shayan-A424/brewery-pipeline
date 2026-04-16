@@ -1,0 +1,102 @@
+[0m00:12:10.328604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEF1CE4050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEF3059910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEF30599D0>]}
+
+
+============================== 00:12:10.332855 | ce8b503b-3e6b-4677-ba37-63dcf918d732 ==============================
+[0m00:12:10.332855 [info ] [MainThread]: Running with dbt=1.11.7
+[0m00:12:10.333851 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\raids\\.dbt', 'invocation_command': 'dbt init brewery_pipeline', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m00:12:10.355774 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\raids\.dbt
+[0m00:12:10.358759 [debug] [MainThread]: Starter project path: C:\Users\raids\brewery-pipeline\venv\Lib\site-packages\dbt\include\starter_project
+[0m00:12:10.417645 [info ] [MainThread]: 
+Your new dbt project "brewery_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:12:10.418646 [info ] [MainThread]: Setting up your profile.
+[0m00:12:14.575894 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:12:14.576920 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:12:14.577889 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:23:15.488871 [info ] [MainThread]: Profile brewery_pipeline written to C:\Users\raids\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m00:23:15.490838 [debug] [MainThread]: Command `dbt init` succeeded at 00:23:15.490838 after 665.25 seconds
+[0m00:23:15.491835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEF1CE4110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEF1CD1450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AEEB526910>]}
+[0m00:23:15.492833 [debug] [MainThread]: Flushing usage events
+[0m00:23:16.285948 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:23:32.899946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A9C4B52D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A98BE22D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A98BDA850>]}
+
+
+============================== 00:23:32.904956 | ef7b263f-9aad-453a-8327-5cc19a06c183 ==============================
+[0m00:23:32.904956 [info ] [MainThread]: Running with dbt=1.11.7
+[0m00:23:32.905930 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\raids\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m00:23:32.927895 [info ] [MainThread]: dbt version: 1.11.7
+[0m00:23:32.927895 [info ] [MainThread]: python version: 3.11.9
+[0m00:23:32.928893 [info ] [MainThread]: python path: C:\Users\raids\brewery-pipeline\venv\Scripts\python.exe
+[0m00:23:32.929865 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m00:23:33.390714 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:23:33.391686 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:23:33.392716 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:23:33.465488 [info ] [MainThread]: Using profiles dir at C:\Users\raids\.dbt
+[0m00:23:33.466486 [info ] [MainThread]: Using profiles.yml file at C:\Users\raids\.dbt\profiles.yml
+[0m00:23:33.467519 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\raids\brewery-pipeline\dbt_project.yml
+[0m00:23:33.469477 [info ] [MainThread]: adapter type: snowflake
+[0m00:23:33.469477 [info ] [MainThread]: adapter version: 1.11.3
+[0m00:23:33.470475 [info ] [MainThread]: Configuration:
+[0m00:23:33.471472 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:23:33.472469 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:23:33.472469 [info ] [MainThread]: Required dependencies:
+[0m00:23:33.474464 [debug] [MainThread]: Executing "git --help"
+[0m00:23:33.486462 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m00:23:33.488458 [info ] [MainThread]: Connection:
+[0m00:23:33.489424 [info ] [MainThread]:   account: fpjpual-ts66435
+[0m00:23:33.490422 [info ] [MainThread]:   user: ShayanA
+[0m00:23:33.491418 [info ] [MainThread]:   database: BREWERY_DB
+[0m00:23:33.492416 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m00:23:33.492416 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m00:23:33.501392 [info ] [MainThread]:   schema: RAW
+[0m00:23:33.527626 [info ] [MainThread]:   authenticator: None
+[0m00:23:33.529624 [info ] [MainThread]:   oauth_client_id: None
+[0m00:23:33.532615 [info ] [MainThread]:   query_tag: None
+[0m00:23:33.533612 [info ] [MainThread]:   client_session_keep_alive: False
+[0m00:23:33.547513 [info ] [MainThread]:   host: None
+[0m00:23:33.549091 [info ] [MainThread]:   port: None
+[0m00:23:33.550275 [info ] [MainThread]:   proxy_host: None
+[0m00:23:33.550275 [info ] [MainThread]:   proxy_port: None
+[0m00:23:33.551305 [info ] [MainThread]:   protocol: None
+[0m00:23:33.552273 [info ] [MainThread]:   connect_retries: 1
+[0m00:23:33.552273 [info ] [MainThread]:   connect_timeout: None
+[0m00:23:33.553269 [info ] [MainThread]:   retry_on_database_errors: False
+[0m00:23:33.553269 [info ] [MainThread]:   retry_all: False
+[0m00:23:33.554299 [info ] [MainThread]:   insecure_mode: False
+[0m00:23:33.555265 [info ] [MainThread]:   reuse_connections: True
+[0m00:23:33.555265 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m00:23:33.556262 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m00:23:33.557287 [info ] [MainThread]: Registered adapter: snowflake=1.11.3
+[0m00:23:34.054121 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m00:23:36.255857 [debug] [MainThread]: Using snowflake connection "debug"
+[0m00:23:36.256861 [debug] [MainThread]: On debug: select 1 as id
+[0m00:23:36.256861 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:23:37.534173 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.276 seconds
+[0m00:23:37.535170 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:23:37.535170 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:23:37.539216 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\raids\brewery-pipeline\dbt_project.yml> not found
+
+[0m00:23:37.544283 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m00:23:37.546215 [debug] [MainThread]: Command `dbt debug` failed at 00:23:37.546215 after 4.74 seconds
+[0m00:23:37.546215 [debug] [MainThread]: Connection 'debug' was left open.
+[0m00:23:37.547194 [debug] [MainThread]: On debug: Close
+[0m00:23:37.674093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A95936810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A9EA10E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A9EB6B010>]}
+[0m00:23:37.674093 [debug] [MainThread]: Flushing usage events
+[0m00:23:38.342294 [debug] [MainThread]: An error was encountered while trying to flush usage events

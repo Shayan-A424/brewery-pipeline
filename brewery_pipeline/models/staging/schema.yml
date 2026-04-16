@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_breweries
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: name
+        tests:
+          - not_null
+      - name: brewery_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                 values: ['micro', 'nano', 'regional', 'brewpub', 'large', 'planning', 'bar', 'contract', 'proprietor', 'taproom', 'closed']
+      - name: state
+        tests:
+          - not_null
+      - name: country
+        tests:
+          - not_null
