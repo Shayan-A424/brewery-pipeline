@@ -1,9 +1,10 @@
 # End-to-End Cloud Data Pipeline
 
 ## Overview
-An end-to-end data pipeline that ingests brewery data from a public API,
-loads it into Snowflake via AWS S3 and Snowpipe, and transforms it using
-dbt (staging → marts layer) with automated data quality tests.
+An end-to-end data pipeline that ingests brewery data from a public API, 
+loads raw JSON into AWS S3, auto-ingests into Snowflake via Snowpipe, 
+and transforms it using dbt (staging → marts layer) with 7 automated 
+data quality tests passing.
 
 ## Architecture
 Public API → Python → AWS S3 → Snowpipe → Snowflake → dbt → Mart Tables
@@ -15,14 +16,20 @@ Public API → Python → AWS S3 → Snowpipe → Snowflake → dbt → Mart Tab
 - dbt Core
 
 ## Project Structure
-- `ingestion/` — Python scripts to fetch API data and upload to S3
-- `brewery_pipeline/` — dbt project containing staging and mart models
-- `.env` — local credentials (not tracked in GitHub)
+- `ingestion/` — Python script that fetches 200+ breweries from the Open 
+  Brewery DB API and uploads raw JSON to S3
+- `brewery_pipeline/models/staging/` — cleans and deduplicates raw data
+- `brewery_pipeline/models/marts/` — two analytical models: breweries by 
+  state and breweries by type
+
+## Results
+- 200+ brewery records ingested, loaded, and transformed end-to-end
+- 7 dbt data quality tests passing (not_null, unique, accepted_values)
+- Full staging → marts transformation layer built in Snowflake
 
 ## Status
-🔧 In progress — environment configured, Snowflake connected, dbt initialized.
-Next step: building Python ingestion script.
+Complete — April 2026
 
 ## Data Source
-[Open Brewery DB](https://www.openbrewerydb.org/) — free public API,
+[Open Brewery DB](https://www.openbrewerydb.org/) — free public API, 
 no authentication required.
